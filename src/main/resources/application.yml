@@ -1,0 +1,33 @@
+spring:
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:./securityjwtstudy
+    username: sa
+    password: '004637'
+    driver-class-name: org.h2.Driver
+
+  profiles:
+    include: oauth
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-secret: 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
+            client-id: 528140661498-j21vs9lfflikqv66gil89b9up8ccrq7v.apps.googleusercontent.com
+            scope: profile,email
+
+logging.level:
+  org.hibernate.SQL: debug
