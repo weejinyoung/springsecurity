@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.jwt.header",
+      "type": "java.lang.String",
+      "description": "Description for spring.jwt.header."
+    },
+    {
+      "name": "spring.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for spring.jwt.secret."
+    },
+    {
+      "name": "spring.jwt.token-validity-in-seconds",
+      "type": "java.lang.String",
+      "description": "Description for spring.jwt.token-validity-in-seconds."
+    }
+  ] }
